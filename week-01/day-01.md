@@ -1,10 +1,10 @@
 # Aprendido
 - Datatypes e const.
-- Operacoes aritmeticas basicas.
+- Operacoes aritméticas básicas.
 - Typedef e namespaces.
 - User Inputs.
-- Funcoes matematicas.
+- Funções matemáticas.
 
 ## Feito
-- Exercicio sobre calculo de cirncunferencia.
-- Exercicio sobre calculo de hipotenusa.
+- Exercício sobre cálculo de circunferência.
+- Exercício sobre cálculo de hipotenusa.
