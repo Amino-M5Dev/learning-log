@@ -28,6 +28,8 @@ int main() {
 
         cout << "\nDo you want to perform another operation? (Y / N): ";
         cin >> r;
+        cout << endl;
+
     }
 
     return 0;
