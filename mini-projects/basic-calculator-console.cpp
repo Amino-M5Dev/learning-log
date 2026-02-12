@@ -17,10 +17,12 @@ int main() {
     double n1, n2;
     char oper;
     char r = 'y';
+    int a;
 
     while (r == 'y' || r == 'Y') {
 
-        menu();
+        if(a==0)
+            menu();
         input(n1, n2, oper);
 
         cout << "\nResult:\n";
@@ -29,7 +31,7 @@ int main() {
         cout << "\nDo you want to perform another operation? (Y / N): ";
         cin >> r;
         cout << endl;
-
+        a++;
     }
 
     return 0;
