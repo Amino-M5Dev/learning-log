@@ -1,19 +1,20 @@
 # Learning Log
-Registro contínuo da minha evolução em programação durante a graduação em Engenharia de Computação.
+- Registro continuo da minha evolucao em HTML, CSS e JavaScript.
 
 ## Objetivo
 - Documentar estudos diários.
-- Registrar problemas se soluções.
 - Guardar exercícios e mini-projetos.
-- Criar histórico público de aprendizado.
+- Criar histórico público/privado de aprendizado.
 
 ## Estrutura
-- week-XX/: registros semanais
-- exercises/: práticas por linguagem
+- notes/: registros
+- exercises/: práticas
 - mini-projects/: projetos pequenos
 
 ## Tecnologias atuais
-- C++
 - HTML
 - CSS
 - JavaScript
+
+## Status
+- Em aprendizagem ...
