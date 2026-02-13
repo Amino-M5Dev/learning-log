@@ -1,10 +1,13 @@
-# Aprendido
-- Datatypes e const.
-- Operacoes aritmeticas basicas.
-- Typedef e namespaces.
-- User Inputs.
-- Funcoes matematicas.
+# Aprendido (PT)
+- Data types (int, float, double, char, string, bool) e uso de const.
+- Operações aritméticas básicas (+, -, *, /, %).
+- Conversão de tipos (casting).
+- Typedef (alias de tipos).
+- Namespaces (uso de std::).
+- User input com cin e getline.
+- Funções matemáticas da biblioteca <cmath>.
 
-## Feito
-- Exercicio sobre calculo de cirncunferencia.
-- Exercicio sobre calculo de hipotenusa.
+## Feito (PT)
+- Exercício de cálculo do comprimento da circunferência.
+- Exercício de cálculo da hipotenusa (Teorema de Pitágoras).
+- Exercícios simples com entrada de dados e operações matemáticas.
