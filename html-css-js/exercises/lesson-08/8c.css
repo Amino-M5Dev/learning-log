@@ -1,0 +1,16 @@
+.search-bar {
+    font-size: 16px;
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: 0 1.5px 5px rgba(0, 0, 0, 0.221);
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+    margin-left: 160px;
+}

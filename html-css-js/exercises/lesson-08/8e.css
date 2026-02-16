@@ -1,0 +1,36 @@
+.title {
+    font-family: Arial;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.location,
+.destination {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    width: 400px;
+    border: none;
+    background-color: rgb(245, 240, 240);
+}
+
+button {
+    cursor: pointer;
+}
+
+.request {
+    background-color: black;
+    color: white;
+    padding: 9px 13px;
+    border: none;
+    margin-top: 20px;
+}
+
+.schedule {
+    background-color: rgb(245, 240, 240);
+    padding: 9px 13px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
