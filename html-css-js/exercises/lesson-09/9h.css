@@ -1,0 +1,31 @@
+.google,
+.input,
+.button {
+    text-align: center;
+}
+
+.search-bar {
+    font-size: 16px;
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.221);
+    margin: 0 auto;
+    display: inline-block;
+}
+
+img {
+    width: 200px;
+    display: inline-block;
+}
+
+button {
+    padding: 15px 15px;
+    margin: 30px 5px;
+    background-color: rgb(228, 228, 228);
+    border: none;
+    font-family: Arial;
+}

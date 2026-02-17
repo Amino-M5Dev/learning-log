@@ -1,0 +1,23 @@
+.box {
+    height: 100px;
+    width: 300px;
+    border: solid;
+    border-width: 1px;
+    padding: 0 20px;
+    border-color: grey;
+
+}
+
+p {
+    font-family: Arial;
+    font-weight: 500;
+}
+
+button {
+    font-family: Arial;
+    padding: 3px 7px;
+    border-radius: 3px;
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+}
