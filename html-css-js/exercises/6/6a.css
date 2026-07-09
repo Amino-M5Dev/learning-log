@@ -1,0 +1,23 @@
+p {
+  font-family: Arial;
+  margin: 10px 0;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.nickname {
+  font-weight: 100;
+  color: grey;
+}
+
+.text1 {
+  width: 500px;
+}
+.text2 {
+  margin-top: 20px;
+}
+.link {
+  color: rgb(0, 149, 255);
+}
