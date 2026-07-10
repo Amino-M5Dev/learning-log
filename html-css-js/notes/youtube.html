@@ -3,18 +3,60 @@
   <head>
     <title>Youtube Exercise</title>
     <style>
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+      }
       .thumbnail {
         width: 300px;
+        display: block;
       }
+
       .search-bar {
+        display: block;
       }
+
     </style>
   </head>
 
   <body>
     
-    <img src="./thumbnail/thumbnail-1.webp" class="thumbnail">
-    <input class="search-bar" type="textbox" placeholder="Search">
+
+    <input type="textbox" placeholder="Search" class="search-bar">
+
+    <div class="video-preview">
+      <img src="./thumbnail/thumbnail-1.webp" class="thumbnail">    
+
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+
+    <p class="video-author">
+      Marques Brownlee
+    </p>
+    <p class="video-stats">
+
+      3.4M views • 6 months ago
+    </p>
+    </div>
+
+    <div class="video-preview">
+      <img src="./thumbnail/thumbnail-2.webp" class="thumbnail">    
+
+    <p class="video-title">
+      Try Not To Laugh Challenge #9
+    </p>
+
+    <p class="video-author">
+      Markiplier
+    </p>
+    <p class="video-stats">
+
+      19M views • 4 years ago
+    </p>
+    </div>
 
   </body>
 </html>
