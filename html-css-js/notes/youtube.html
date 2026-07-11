@@ -2,12 +2,36 @@
   <html lang="en">
   <head>
     <title>Youtube Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+      p {
+        font-family: Roboto;
+      }
       .video-preview {
         width: 300px;
         display: inline-block;
         vertical-align: top;
         margin: 5px;
+      }
+
+      .video-title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .video-author {
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: rgb(75, 75, 75);
+      }
+      .video-stats {
+        margin-top: 0;
+        font-size: 12px;
+        color: rgb(75, 75, 75);
       }
       .thumbnail {
         width: 300px;
@@ -18,6 +42,25 @@
         display: block;
       }
 
+      .profile-col {
+        display: inline-block;
+        width: 36px;
+        vertical-align: top;
+      }
+      .text-col {
+        display: inline-block;
+        width: 250px;
+        margin-left: 10px;
+      }
+
+      .profile-pic {
+        width: 100%;
+        border-radius: 50px;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
     </style>
   </head>
 
@@ -27,35 +70,49 @@
     <input type="textbox" placeholder="Search" class="search-bar">
 
     <div class="video-preview">
-      <img src="./thumbnail/thumbnail-1.webp" class="thumbnail">    
+      <div class="thumbnail-row">
+        <img src="./thumbnail/thumbnail-1.webp" class="thumbnail"> 
+      </div>
+      <div class="info-row">
+        <div class="profile-col">
+          <img class="profile-pic" src="./profile-pic/channel-1.jpeg">
+        </div>
+        <div class="text-col">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
 
-    <p class="video-title">
-      Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-
-    <p class="video-author">
-      Marques Brownlee
-    </p>
-    <p class="video-stats">
-
-      3.4M views • 6 months ago
-    </p>
+          <p class="video-author">
+            Marques Brownlee
+          </p>
+          <p class="video-stats">
+            3.4M views • 6 months ago
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="video-preview">
-      <img src="./thumbnail/thumbnail-2.webp" class="thumbnail">    
+      <div class="thumbnail-row">
+        <img src="./thumbnail/thumbnail-2.webp" class="thumbnail"> 
+      </div>
+      <div class="info-row">
+        <div class="profile-col">
+          <img class="profile-pic" src="./profile-pic/channel-2.jpeg">
+        </div>
+        <div class="text-col">
+          <p class="video-title">
+            Try Not To Laugh Challenge #9
+          </p>
 
-    <p class="video-title">
-      Try Not To Laugh Challenge #9
-    </p>
-
-    <p class="video-author">
-      Markiplier
-    </p>
-    <p class="video-stats">
-
-      19M views • 4 years ago
-    </p>
+          <p class="video-author">
+            Markiplier
+          </p>
+          <p class="video-stats">
+            19M views • 4 years ago
+          </p>
+        </div>
+      </div>
     </div>
 
   </body>

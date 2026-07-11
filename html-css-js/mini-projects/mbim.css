@@ -1,0 +1,191 @@
+p {
+  font-family: Roboto;
+  margin: 0 auto;
+}
+
+.main-card {
+  height: 620px;
+  width: 330px;
+  background-color: rgba(128, 128, 128, 0.178);
+  margin: 0 auto;
+}
+
+.acc-info-card {
+  height: 200px;
+  width: 100%;
+  background-color: rgba(22, 9, 25, 0.419);
+}
+
+.menu-row {
+  height: 45px;
+  width: 100%;
+}
+
+.menu-burger {
+  margin-top: 11px;
+  margin-left: 5px;
+  width: 18px;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 45px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.profile-menu {
+  width: 89%;
+  display: inline-block;
+  text-align: end;
+  margin-top: 8px;
+  vertical-align: top;
+}
+
+.text {
+  font-size: 11px;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+}
+
+.profile-icon {
+  width: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.money-info {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.random-text {
+  font-size: 10px;
+  font-family: Roboto;
+  color: white;
+  line-height: 20px;
+}
+
+.total-acc {
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.total-cur {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.sec-cards {
+  height: 50%;
+  width: 100%;
+  margin-top: 25px;
+  padding: 5px;
+}
+
+.card {
+  height: 90px;
+  width: 80px;
+  background-color: rgb(176, 59, 126);
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.card-text {
+  color: white;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.ad-card {
+  height: 77%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.see {
+  margin-bottom: 10px;
+}
+.db-icon {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.db-text {
+  color: rgb(17, 113, 89);
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+
+}
+.ad-pic {
+  width: 200px;
+}
+
+.move-info-card {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.data {
+  font-size: 12px;
+  color: rgb(64, 64, 64);
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.transfer {
+  width: 200px;
+  display: inline-block;
+}
+
+.transfer-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.type {
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  margin: 0;
+}
+.valor {
+  vertical-align: middle;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 45px;
+}
+
+.valor-m {
+  font-weight: bold;
+  text-align: start;
+}
+
+.valor-mod {
+  font-size: 9px;
+}
+
+button {
+  border: 1px solid white;
+  padding: 7px;
+  font-size: 10px;
+  font-family: Roboto;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+}
