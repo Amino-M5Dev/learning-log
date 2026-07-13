@@ -1,226 +1,196 @@
-body {
-  background-color: grey;
-  margin: 0;
-}
-
 p {
-  font-family: Montserrat;
+  font-family: Roboto;
   margin: 0 auto;
 }
 
-.main-screen {
+.main-card {
   height: 620px;
-  width: 350px;
-  background-color: rgb(255, 255, 255);
-  margin: 60px auto;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  width: 330px;
+  background-color: rgba(128, 128, 128, 0.178);
+  margin: 0 auto;
 }
 
-.information-card {
-  height: 230px;
-  background-color: rgb(125, 28, 96);
-  border-radius: 15px 15px 0 0;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+.acc-info-card {
+  height: 200px;
+  width: 100%;
+  background-color: rgba(22, 9, 25, 0.419);
 }
 
-.menu-row-grid {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  column-gap: 185px;
-  padding: 10px;
-  align-items: center;
-  vertical-align: middle;
-  margin-bottom: 10px;
+.menu-row {
+  height: 45px;
+  width: 100%;
 }
 
-.menu-burger-icon {
-  margin-top: 10px;
+.menu-burger {
+  margin-top: 11px;
   margin-left: 5px;
-  width: 16px;
-  transition: width 0.3s;
-  cursor: pointer;
+  width: 18px;
 }
-.menu-burger-icon:hover {
+
+.menu-icon {
   width: 20px;
+  height: 45px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .profile-menu {
-  text-align: right;
+  width: 89%;
+  display: inline-block;
+  text-align: end;
   margin-top: 8px;
   vertical-align: top;
-  cursor: pointer;
 }
 
-.profile-text {
-  font-size: 9px;
+.text {
+  font-size: 11px;
   display: inline-block;
   color: white;
-  transition: font-size 0.3s;
+  vertical-align: middle;
 }
 
 .profile-icon {
-  width: 16px;
-  transition: width 0.3s;
-}
-.profile-icon:hover {
   width: 20px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .money-info {
-  height: 130px;
+  height: auto;
   width: 100%;
   border-radius: 10px;
   text-align: center;
 }
 
-.code-text {
+.random-text {
   font-size: 10px;
-  font-weight: 500;
+  font-family: Roboto;
   color: white;
   line-height: 20px;
 }
 
-.total-money {
-  margin-top: 20px;
+.total-acc {
+  margin-top: 15px;
   color: white;
   font-weight: bold;
 }
 
-.total-currency {
+.total-cur {
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
 }
 
-.secundary-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 5px;
-  margin-top: 10px;
+.sec-cards {
+  height: 50%;
+  width: 100%;
+  margin-top: 25px;
   padding: 5px;
-  height: 100px;
 }
 
 .card {
   height: 90px;
   width: 80px;
-  background-color: rgb(168, 52, 118);
+  background-color: rgb(176, 59, 126);
   border-radius: 5px;
-  transition: height 0.3s,
-              width 0.3s;
-  cursor: pointer;
-  box-shadow: 0 5px 3px rgba(0,0,0,0.2);
-}
-.card:active {
-  background-color: rgb(148, 46, 104);
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .card-text {
   color: white;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 70px;
   margin-left: 5px;
   font-size: 10px;
 }
 
-.ad-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 10px;
+.ad-card {
+  height: 77%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.patrimonio-icon {
+.see {
+  margin-bottom: 10px;
+}
+.db-icon {
   vertical-align: middle;
   display: inline-block;
-  cursor: pointer;
-  transition: width 0.3s;
 }
-.patrimonio-text {
-  color: rgb(16, 122, 95);
+
+.db-text {
+  color: rgb(17, 113, 89);
   font-size: 12px;
+  margin-bottom: 5px;
   display: inline-block;
-  cursor: pointer;
-  vertical-align: middle;
-}
-.patrimonio-text:hover {
-  font-size: 11px;
+
 }
 .ad-pic {
   width: 200px;
-  margin: 0 auto;
-  cursor: pointer;
 }
 
-.extracto-card {
+.move-info-card {
+  margin-top: 10px;
   padding: 5px;
 }
 
 .data {
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(64, 64, 64);
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
 .transfer {
+  width: 200px;
   display: inline-block;
 }
 
 .transfer-icon {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
-.type-transfer {
+.type {
   font-size: 11px;
   display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  width: 200px;
+  vertical-align: middle;
+  width: 180px;
+  margin: 0;
 }
-
-.valor-transfer {
+.valor {
   vertical-align: middle;
   font-size: 12px;
   display: inline-block;
   margin-left: 45px;
 }
 
-.valor-moeda {
+.valor-m {
   font-weight: bold;
-  margin-bottom: 10px;
+  text-align: start;
 }
 
 .valor-mod {
-  font-weight: 500;
   font-size: 9px;
 }
 
-.move-btn {
+button {
   border: 1px solid white;
-  padding: 6px;
+  padding: 7px;
   font-size: 10px;
-  font-family: Montserrat;
+  font-family: Roboto;
   background-color: rgba(0,0,0,0);
   color: white;
   border-radius: 5px;
   margin-top: 15px;
-  transition: background-color 0.3s,
-              color 0.3s,
-              padding 0.3s;
-  cursor: pointer;
 }
 
-.move-btn:hover {
+button:hover {
   background-color: white;
   color: grey;
-  font-size: 11px;
-  padding: 8px;
-}
-
-.move-btn:active {
-  background-color: rgb(76, 18, 75);
-  color: rgb(255, 255, 255);
-  padding: 7px;
 }
