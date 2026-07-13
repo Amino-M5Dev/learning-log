@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBIM IZI - Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.container{
+    width:360px;
+    margin:70px auto;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.topo{
+    background:#8f0d5f;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+.topo h1{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+.topo p{
+    margin-top:5px;
+    opacity:.9;
+}
+
+.tabs{
+    display:flex;
+}
+
+.tabs button{
+    width:50%;
+    border:none;
+    background:#ececec;
+    padding:15px;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.tabs button.active{
+    background:#fff;
+    color:#8f0d5f;
+    font-weight:bold;
+    border-bottom:3px solid #8f0d5f;
+}
+
+.formulario{
+    display:none;
+    padding:30px;
+}
+
+.formulario.active{
+    display:block;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#8f0d5f;
+}
+
+button.submit{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#8f0d5f;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button.submit:hover{
+    background:#8f0d5f;
+}
+
+.link{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.link a{
+    color:#8f0d5f;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#mensagemLogin,
+#mensagemCadastro{
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="topo">
+        <h1>MBIM IZI</h1>
+        <p>Bem-vindo</p>
+    </div>
+
+    <div class="tabs">
+        <button class="active" onclick="mostrarLogin()">Entrar</button>
+        <button onclick="mostrarCadastro()">Criar Conta</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="formulario active" id="login">
+
+        <input type="text" id="usuario" placeholder="Usuário">
+
+        <input type="password" id="senha" placeholder="Senha">
+
+        <button class="submit" onclick="login()">
+            Entrar
+        </button>
+
+        <div class="link">
+            Ainda não possui conta?
+            <a href="#" onclick="mostrarCadastro()">
+                Criar agora
+            </a>
+        </div>
+
+        <p id="mensagemLogin"></p>
+
+    </div>
+
+    <!-- CADASTRO -->
+    <div class="formulario" id="cadastro">
+
+        <input type="text" id="novoUsuario" placeholder="Nome de usuário">
+
+        <input type="email" id="novoEmail" placeholder="Email">
+
+        <input type="password" id="novaSenha" placeholder="Senha">
+
+        <input type="password" id="confirmarSenha" placeholder="Confirmar senha">
+
+        <button class="submit" onclick="criarConta()">
+            Criar Conta
+        </button>
+
+        <div class="link">
+            Já possui uma conta?
+            <a href="#" onclick="mostrarLogin()">
+                Entrar
+            </a>
+        </div>
+
+        <p id="mensagemCadastro"></p>
+
+    </div>
+
+</div>
+
+<script>
+
+const botoes=document.querySelectorAll(".tabs button");
+
+function mostrarLogin(){
+
+    document.getElementById("login").classList.add("active");
+    document.getElementById("cadastro").classList.remove("active");
+
+    botoes[0].classList.add("active");
+    botoes[1].classList.remove("active");
+}
+
+function mostrarCadastro(){
+
+    document.getElementById("cadastro").classList.add("active");
+    document.getElementById("login").classList.remove("active");
+
+    botoes[1].classList.add("active");
+    botoes[0].classList.remove("active");
+}
+
+function login(){
+
+    let usuario=document.getElementById("usuario").value;
+    let senha=document.getElementById("senha").value;
+
+    let msg=document.getElementById("mensagemLogin");
+
+    // usuário de teste
+    if(usuario=="admin" && senha=="1234"){
+
+        msg.style.color="green";
+        msg.innerHTML="Login efetuado com sucesso!";
+
+        setTimeout(function(){
+
+            // Redireciona para a interface
+            window.location.href="mbim-interface.html";
+
+        },1000);
+
+    }else{
+
+        msg.style.color="red";
+        msg.innerHTML="Usuário ou senha incorretos.";
+
+    }
+
+}
+
+function criarConta(){
+
+    let senha=document.getElementById("novaSenha").value;
+    let confirmar=document.getElementById("confirmarSenha").value;
+
+    let msg=document.getElementById("mensagemCadastro");
+
+    if(senha!=confirmar){
+
+        msg.style.color="red";
+        msg.innerHTML="As senhas não coincidem.";
+        return;
+
+    }
+
+    msg.style.color="green";
+    msg.innerHTML="Conta criada com sucesso!";
+
+    setTimeout(function(){
+
+        mostrarLogin();
+
+        document.getElementById("novoUsuario").value="";
+        document.getElementById("novoEmail").value="";
+        document.getElementById("novaSenha").value="";
+        document.getElementById("confirmarSenha").value="";
+
+    },1500);
+
+}
+
+</script>
+
+</body>
+</html>
