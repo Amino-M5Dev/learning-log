@@ -24,13 +24,12 @@ p {
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.menu-row-grid {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  column-gap: 185px;
-  padding: 10px;
+.menu-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  vertical-align: middle;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
@@ -106,13 +105,15 @@ p {
   width: 80px;
   background-color: rgb(168, 52, 118);
   border-radius: 5px;
-  transition: height 0.3s,
-              width 0.3s;
+  transition: background-color 0.3s;
   cursor: pointer;
   box-shadow: 0 5px 3px rgba(0,0,0,0.2);
 }
-.card:active {
+.card:hover {
   background-color: rgb(148, 46, 104);
+}
+.card:active {
+  opacity: 0.9;
 }
 
 .card-text {
@@ -164,32 +165,22 @@ p {
 }
 
 .transfer {
-  display: inline-block;
-}
-
-.transfer-icon {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .type-transfer {
   font-size: 11px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  width: 200px;
-}
-
-.valor-transfer {
-  vertical-align: middle;
-  font-size: 12px;
-  display: inline-block;
-  margin-left: 45px;
+  margin-left: 5px;
+  flex: 1;
 }
 
 .valor-moeda {
+  font-size: 11px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .valor-mod {

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12e Exercise</title>
+  <style>
+  
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Arial;
+    }
+  
+    p {
+      margin: 5px;
+    }
+
+    .profile-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 400px;
+      margin-bottom: 10px;
+    }
+
+    .profile-picture {
+      width: 60px;
+      border-radius: 50px;
+      margin-right: 10px;
+    }
+
+    .text-container {
+      flex: 1;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .type {
+      color:grey;
+    }
+
+    .popular {
+      color: grey;
+      font-size: 14px;
+    }
+
+    .follow-button {
+      background-color: rgb(0, 174, 255);
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-flex">
+    <img class="profile-picture" src="./eren-icon.jpeg">
+    <div class="text-container">
+      <p class="name">Eren</p>
+      <p class="type">The Yeager</p>
+      <p class="popular">Popular</p>
+    </div>
+    <button class="follow-button">Follow</button>
+  </div>
+
+  <div class="profile-flex">
+    <img class="profile-picture" src="./oreki-icon.jpg">
+    <div class="text-container">
+      <p class="name">Oreki</p>
+      <p class="type">The Lazy Guy</p>
+      <p class="popular">Popular</p>
+    </div>
+    <button class="follow-button">Follow</button>
+  </div>
+
+  <div class="profile-flex">
+    <img class="profile-picture" src="./senku-icon.jpeg">
+    <div class="text-container">
+      <p class="name">Senku</p>
+      <p class="type">Dr Stone</p>
+      <p class="popular">Popular</p>
+    </div>
+    <button class="follow-button">Follow</button>
+  </div>
+
+</body>
+</html>
