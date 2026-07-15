@@ -1,0 +1,63 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 4px;
+}
+
+.main-conteiner {
+  width: 370px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: rgb(93, 93, 93);
+}
+
+.message-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.profile-col {
+  margin-right: 10px;
+}
+
+.profile-picture {
+  width: 48px;
+  border-radius: 30px;  
+}
+
+.info {
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 13px;
+  color: grey;
+}
+
+.subject {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-text {
+  font-size: 14px;
+  color: grey;
+}
