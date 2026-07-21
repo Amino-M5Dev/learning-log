@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>14f Exercise</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .sidebar-profile-pic {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgb(38, 38, 38);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 16px;
+        }
+
+        .sidebar-info {
+            position: fixed;
+            top: 0;
+            left: 80px;
+            bottom: 0;
+            background-color: rgb(57, 57, 57);
+            padding: 12px;
+            width: 160px;
+        }
+
+        .info-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+
+        .info-text {
+            font-weight: bold;
+        }
+
+        .info-plus-icon {
+            height: 14px;
+        }
+
+        .profile-pic {
+            width: 48px;
+            border-radius: 30px;
+        }
+
+        .hashtags {
+            color: rgb(177, 177, 177);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-profile-pic">
+        <img class="profile-pic" src="./eren-icon.jpeg">
+        <img class="profile-pic" src="./oreki-icon.jpg">
+        <img class="profile-pic" src=".//senku-icon.jpeg">
+    </div>
+
+    <div class="sidebar-info">
+        <div class="info-flex">
+            <p class="info-text">INFO</p>
+            <img class="info-plus-icon" src="./plus.png">
+        </div>
+        <p class="hashtags"># new-videos</p>
+        <p class="hashtags"># updates</p>
+        <p class="hashtags"># faq</p>
+    </div>
+
+</body>
+</html>
