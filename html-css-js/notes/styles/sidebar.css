@@ -5,4 +5,67 @@
     top: 55px;
     background-color: white;
     width: 72px;
+    z-index: 300;
+    padding-top: 5px;
+}
+
+.sidebar-link {
+    height: 74px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.sidebar-link img {
+    width: 24px;
+}
+
+.sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+}
+
+/* ===========================
+   EXPANDED SIDEBAR (>= 1200.1px)
+=========================== */
+
+@media (min-width: 1200.1px) {
+
+  .sidebar {
+    width: 240px;
+    padding-top: 5px;
+  }
+
+  .sidebar-link {
+    height: 48px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0 24px;
+  }
+
+  .sidebar-link img {
+    width: 24px;
+    flex-shrink: 0;
+  }
+
+  .sidebar-link div {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* keep main content clear of the wider fixed sidebar */
+  main {
+    margin-left: 240px;
+  }
 }

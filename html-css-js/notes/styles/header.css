@@ -1,15 +1,15 @@
 .header {
-  height: 55px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
   background-color: white;
   border-bottom: 1px solid rgb(230, 230, 230);
-  z-index: 100;
 }
 
 .left-section {
@@ -18,9 +18,9 @@
 }
 
 .burger-menu {
+  height: 24px;
   margin-left: 24px;
   margin-right: 24px;
-  height: 24px;
 }
 
 .ytb-logo {
@@ -28,23 +28,23 @@
 }
 
 .middle-section {
-  flex: 1;
-  margin-left: 70px;
-  margin-right: 35px;
-  max-width: 500px;
   display: flex;
   align-items: center;
+  flex: 1;
+  max-width: 500px;
+  margin-left: 70px;
+  margin-right: 35px;
 }
 
 .search-bar {
   flex: 1;
+  width: 0;
   height: 36px;
   padding-left: 12px;
   font-size: 16px;
   border: 1px solid rgb(173, 173, 173);
   border-radius: 2px;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.05);
-  width: 0;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 .search-bar::placeholder {
@@ -53,15 +53,16 @@
 }
 
 .search-btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 39px;
   width: 60px;
-  background-color: rgb(244, 244, 244);
-  border: 1px solid rgb(173, 173, 173);
+  height: 39px;
   margin-left: -1px;
   margin-right: 12px;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid rgb(173, 173, 173);
 }
 
 .search-icon {
@@ -72,10 +73,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
   width: 40px;
-  border-radius: 20px;
+  height: 40px;
   border: none;
+  border-radius: 20px;
   background-color: rgb(244, 244, 244);
 }
 
@@ -85,37 +86,78 @@
 
 .right-section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-shrink: 0;
+  align-items: center;
   width: 150px;
   margin-right: 16px;
+  flex-shrink: 0;
 }
 
-.voice-search-icon,
 .upload-icon,
 .ytb-apps-icon,
 .notifications-icon {
   width: 24px;
 }
 
-.notifications-icon-container {
-  position: relative;
-}
-
-.notifications-count{
-  background-color: rgb(200, 0, 0);
-  color: white;
-  padding: 2px 6px;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-size: 11px;
-  border-radius: 30px;
-  position: absolute;
-  top: -4px;
-  right: -5px;
-}
-
 .current-user-icon {
   width: 32px;
   border-radius: 20px;
+}
+
+.upload-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  padding: 2px 6px;
+  color: white;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: rgb(200, 0, 0);
+  border-radius: 30px;
+}
+
+.search-btn .tooltip,
+.voice-search-btn .tooltip,
+.upload-icon-container .tooltip,
+.ytb-apps-container .tooltip,
+.notifications-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  bottom: -30px;
+  padding: 4px 8px;
+  color: white;
+  font-size: 12px;
+  background-color: grey;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn:hover .tooltip,
+.voice-search-btn:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.ytb-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip  {
+  opacity: 1;
+}
+
+.tooltip {
+  pointer-events: none;
 }
