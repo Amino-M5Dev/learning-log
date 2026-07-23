@@ -9,6 +9,7 @@
   left: 0;
   background-color: white;
   border-bottom: 1px solid rgb(230, 230, 230);
+  z-index: 100;
 }
 
 .left-section {
@@ -96,6 +97,22 @@
 .ytb-apps-icon,
 .notifications-icon {
   width: 24px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count{
+  background-color: rgb(200, 0, 0);
+  color: white;
+  padding: 2px 6px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 11px;
+  border-radius: 30px;
+  position: absolute;
+  top: -4px;
+  right: -5px;
 }
 
 .current-user-icon {
