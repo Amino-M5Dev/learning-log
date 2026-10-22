@@ -1,41 +1,30 @@
-import java.util.Scanner;
+public class Main {
 
-public class Main
-{
     public static void main(String[] args) {
 
-        // THIS IS MY FIRST JAVA PROGRAM
-        // THIS SCRIPT WILL BE USED TO TEST ALL CODES BEFORE IMPLEMENTING IN A NEW FILE
+        Student s1 = new Student("Amino", 20, 3.2);
+        Student s2 = new Student("Muhamad", 22, 2.6);
+        Student s3 = new Student("Cristiano", 35, 6.7);
 
-        Scanner keyboard = new Scanner(System.in);
-
-        System.out.print("Enter your name: ");
-        String name = keyboard.nextLine();
-
-        System.out.print("Enter your age: ");
-        int age = keyboard.nextInt();
-        keyboard.nextLine();
-
-        System.out.print("Enter your department: ");
-        String department = keyboard.nextLine();
-
-        System.out.print("Are you a student (true/false): ");
-        boolean isStudent = keyboard.nextBoolean();
-
+        System.out.println(s1.name);
+        System.out.println(s1.age);
+        System.out.println(s1.gpa);
+        System.out.println(s1.isEnrolled);
 
         System.out.println();
-        System.out.println("Hello " + name);
-        System.out.println("You're " + age + "y old");
 
-        if(isStudent) {
-            System.out.println("You are enrolled as a student!");
-            System.out.println("You're a student of " + department + " department");
-        } else {
-            System.out.println("You are not enrolled!");
-        }
+        System.out.println(s2.name);
+        System.out.println(s2.age);
+        System.out.println(s2.gpa);
+        System.out.println(s2.isEnrolled);
 
+        System.out.println();
+        System.out.println(s3.name);
+        System.out.println(s3.age);
+        System.out.println(s3.gpa);
+        System.out.println(s3.isEnrolled);
 
-
-        keyboard.close();
     }
+
+
 }
